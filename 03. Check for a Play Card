@@ -1,0 +1,41 @@
+/*Problem 3. Check for a Play Card
+
+    Classical play cards use the following signs to designate the card face: `2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K and A. 
+ Write a program that enters a string and prints “yes” if it is a valid card sign or “no” otherwise. Examples:
+*/
+
+using System;
+
+class PlayCard
+{
+    static void Main()
+    {
+        string firsCard = "2";
+        string secondCard = "3";
+        string thirdCard = "4";
+        string fifthCard = "5";
+        string sixthCard = "6";
+        string seventhCard = "7";
+        string eightCard = "8";
+        string ninthCard = "9";
+        string tenthCard = "10";
+        string eleventhCard = "J";
+        string twelvthCard = "Q";
+        string thirteenthCard = "A";
+
+        Console.WriteLine("Write a letter or number: ");
+        string choice = Console.ReadLine();
+
+
+        if ((choice == firsCard) || (choice == secondCard) || (choice == thirdCard) || (choice == fifthCard) || (choice == sixthCard) || (choice == seventhCard) || (choice == eightCard)
+                || (choice == ninthCard) || (choice == tenthCard) || (choice == eleventhCard) || (choice == twelvthCard) || (choice == thirteenthCard))
+        {
+            Console.WriteLine("yes");
+        }
+        else
+        { 
+            Console.WriteLine("no");
+        }
+    }
+}
+
